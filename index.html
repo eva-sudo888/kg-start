@@ -1,196 +1,420 @@
 <!DOCTYPE html>
 <html lang="ky">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Эл аралык старт — Кыргызстан</title>
-
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: linear-gradient(180deg, #f6f8fb 0%, #eef2f7 100%);
-    color: #1f2937;
-    line-height: 1.75;
-}
-
-.container {
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 60px 24px;
-}
-
-.photo-block {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.photo-block img {
-    width: 220px;
-    border-radius: 18px;
-    display: block;
-    margin: 0 auto;
-}
-
-.section {
-    margin-top: 90px;
-    padding-top: 50px;
-    border-top: 1px solid #e5e7eb;
-}
-
-h1 {
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 30px;
-}
-
-h2 {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 25px;
-}
-
-p {
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: #374151;
-}
-
-ul {
-    padding-left: 24px;
-    margin-top: 15px;
-    margin-bottom: 30px;
-}
-
-ul li {
-    margin-bottom: 14px;
-    font-size: 18px;
-    color: #374151;
-}
-
-.button {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 22px;
-    margin-top: 35px;
-    background: #0f172a;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    border-radius: 18px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
-    transition: 0.3s ease;
-}
-
-.button:hover {
-    background: #111827;
-    transform: translateY(-2px);
-}
-
-@media (max-width: 768px) {
-    .container {
-        padding: 40px 20px;
-    }
-    h1 { font-size: 24px; }
-    h2 { font-size: 22px; }
-    p, ul li { font-size: 17px; }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Системалуу Бизнес - Зарипа</title>
+    
+    <!-- Facebook Pixel Code - ЗАМЕНИТЕ на свой ID -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'ВАШ_PIXEL_ID_ЗДЕСЬ');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=ВАШ_PIXEL_ID_ЗДЕСЬ&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8eef5 100%);
+        }
+        
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Блок с фото */
+        .hero {
+            background: white;
+            border-radius: 20px;
+            padding: 50px 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        
+        .photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin: 0 auto 30px;
+            border: 5px solid #25D366;
+            object-fit: cover;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.35);
+            transition: transform 0.3s ease;
+        }
+        
+        .photo:hover {
+            transform: scale(1.05);
+        }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+        
+        .highlight {
+            color: #25D366;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+        
+        /* Блок проблем */
+        .problems {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+        }
+        
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: #1a1a1a;
+        }
+        
+        .problem-item, .solution-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+        
+        .problem-item {
+            background: #fff5f5;
+        }
+        
+        .problem-item:hover {
+            background: #fee;
+            transform: translateX(5px);
+        }
+        
+        .solution-item {
+            background: #f0fdf4;
+        }
+        
+        .solution-item:hover {
+            background: #dcfce7;
+            transform: translateX(5px);
+        }
+        
+        .icon {
+            font-size: 24px;
+            margin-right: 15px;
+            flex-shrink: 0;
+            line-height: 1.4;
+        }
+        
+        .item-text {
+            flex: 1;
+        }
+        
+        .item-title {
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: #1a1a1a;
+        }
+        
+        .item-description {
+            font-size: 15px;
+            color: #4a5568;
+            line-height: 1.5;
+        }
+        
+        .verdict {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 700;
+            color: #dc2626;
+            margin-top: 20px;
+            padding: 15px;
+            background: #fff5f5;
+            border-radius: 12px;
+        }
+        
+        /* Блок решения */
+        .solution {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+        }
+        
+        /* Блок CTA */
+        .cta {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d3748 100%);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            color: white;
+        }
+        
+        .cta-text {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        
+        .cta-emphasis {
+            font-size: 19px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+        
+        .filter-warning {
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 12px;
+            border-left: 4px solid #25D366;
+        }
+        
+        /* Кнопка WhatsApp */
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #25D366;
+            color: white;
+            padding: 20px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            max-width: 100%;
+        }
+        
+        .whatsapp-btn:hover {
+            background: #20ba5a;
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(37, 211, 102, 0.5);
+        }
+        
+        .whatsapp-btn:active {
+            transform: translateY(-1px);
+        }
+        
+        .btn-icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        
+        /* Футер */
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #718096;
+            margin-top: 30px;
+            padding: 20px;
+        }
+        
+        /* Адаптив для мобильных */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .hero, .problems, .solution, .cta {
+                padding: 30px 25px;
+                border-radius: 15px;
+            }
+            
+            h1 {
+                font-size: 26px;
+            }
+            
+            .subtitle {
+                font-size: 16px;
+            }
+            
+            .section-title {
+                font-size: 18px;
+            }
+            
+            .item-title {
+                font-size: 15px;
+            }
+            
+            .item-description {
+                font-size: 14px;
+            }
+            
+            .cta-text, .cta-emphasis, .filter-warning {
+                font-size: 16px;
+            }
+            
+            .whatsapp-btn {
+                padding: 18px 30px;
+                font-size: 16px;
+            }
+            
+            .photo {
+                width: 140px;
+                height: 140px;
+                border: 4px solid #25D366;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 22px;
+            }
+            
+            .problem-item, .solution-item {
+                padding: 12px;
+            }
+            
+            .icon {
+                font-size: 20px;
+                margin-right: 12px;
+            }
+            
+            .photo {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
 </head>
-
 <body>
-
-<div class="container">
-
-<div class="photo-block">
-    <img src="zaripa.jpg.png" alt="Зарипа">
-</div>
-
-<!-- 1-экран -->
-<h1>Сиз тармактык бизнеске жаңы келген адам эмессиз.</h1>
-
-<p>Бир чындыкты жакшы билесиз:</p>
-
-<p>
-Рынок кызып кеткен учурда —<br>
-канчалык аракет кылбаңыз да, белгилүү бир деңгээлден өйдө чыгуу кыйын.
-</p>
-
-<p>
-Азыр Кыргызстанда жаңы эл аралык багыт ачылып жатат.<br>
-Рынок жаңы калыптанып жаткан этапта.
-</p>
-
-<!-- 2-экран -->
-<div class="section">
-
-<h2>Сиз буга чейин мындай шартта иштеп көргөнсүз:</h2>
-
-<ul>
-<li>статус дайыма чыңалуу менен сакталат</li>
-<li>ай сайын көлөмдү “далилдөөгө” туура келет</li>
-<li>жогору турган лидерлер ар дайым утушта</li>
-<li>жаңы өнөктөштөр бат эле чарчап кетишет</li>
-</ul>
-
-<p>
-Тажрыйба бар.<br>
-Бирок система мындан ары өсүүгө мүмкүнчүлүк бербей жатат.
-</p>
-
-</div>
-
-<!-- 3-экран -->
-<div class="section">
-
-<p>Азыр дүйнөлүк масштабдагы эл аралык компанияда структура түзүлүп жатат.</p>
-
-<p>
-Бул перезапуск эмес.<br>
-Бул бирөөнүн командасына “куюлуп кирүү” эмес.<br>
-Бул башка лидерлер менен күрөш эмес.
-</p>
-
-<p>Бул — рынокту нөлдөн баштап калыптандыруу этабы.</p>
-
-<p>Ал эми тажрыйбалуу лидер үчүн бул таптакыр башка мүмкүнчүлүк.</p>
-
-</div>
-
-<!-- 4-экран -->
-<div class="section">
-
-<p>
-Эгер сиз өнөктөштүк моделинде<br>
-эмгек эле эмес,<br>
-кирүү убактысы да чечүүчү фактор экенин түшүнсөңүз —
-</p>
-
-<p>кайрылуу калтырыңыз.</p>
-
-<p>Мен айтып берем:</p>
-
-<ul>
-<li>бул кайсы компания</li>
-<li>шарттары кандай</li>
-<li>модель кандай түзүлгөн</li>
-<li>Кыргызстанда кандай стратегия менен ишке кирип жатабыз</li>
-</ul>
-
-<a class="button" href="https://wa.me/996702719689" target="_blank">
-👇 WhatsApp аркылуу байланышуу
-</a>
-
-</div>
-
-</div>
-
+    <div class="container">
+        
+        <!-- БЛОК 1: Главный экран -->
+        <div class="hero">
+            <img src="zaripa.jpg.png" alt="Зарипа" class="photo">
+            <h1>99% өнөктөштөр <span class="highlight">текке эмгектенишет.</span><br>Мен математиканы сунуштайм.</h1>
+            <p class="subtitle">Кыргызстанда 90 күндүк алгоритм боюнча киреше системасын курабыз. Айдын аягында чуркоосуз жана натыйжанын жоголбошу менен.</p>
+        </div>
+        
+        <!-- БЛОК 2: Проблемы -->
+        <div class="problems">
+            <p class="section-title">Көпчүлүк өнөктөштүк тармактарда иштеген адамдар тузакка түшөт:</p>
+            
+            <div class="problem-item">
+                <span class="icon">❌</span>
+                <div class="item-text">
+                    <div class="item-title">Жашыруун ай сайынкы төлөмдөр</div>
+                    <div class="item-description">Ар бир айда өзүңүздүн акчаңызга товар сатып алып, деңгээлди сактайсыз.</div>
+                </div>
+            </div>
+            
+            <div class="problem-item">
+                <span class="icon">❌</span>
+                <div class="item-text">
+                    <div class="item-title">Күчтүү өнөктөштөрдөн пайда жоготуу</div>
+                    <div class="item-description">Лидерди өстүрдүңүзбү? Система сиздин бутагыңызды "кесип", процентиңизди алып калат.</div>
+                </div>
+            </div>
+            
+            <div class="problem-item">
+                <span class="icon">❌</span>
+                <div class="item-text">
+                    <div class="item-title">Деңгээл түшүп калат</div>
+                    <div class="item-description">30 күндө планды жаппадыңызбы? Баары кайра башталат. Сиз артка кайтасыз.</div>
+                </div>
+            </div>
+            
+            <div class="verdict">Бул бизнес эмес. Бул "тилки чаркы".</div>
+        </div>
+        
+        <!-- БЛОК 3: Решение -->
+        <div class="solution">
+            <p class="section-title">Менин системамда башка математика:</p>
+            
+            <div class="solution-item">
+                <span class="icon">✅</span>
+                <div class="item-text">
+                    <div class="item-title">Ай сайынкы милдеттенмелер жок</div>
+                    <div class="item-description">Сиз товарды жасалма түрдө сатып албайсыз. Реалдуу кардарлар менен иштейсиз.</div>
+                </div>
+            </div>
+            
+            <div class="solution-item">
+                <span class="icon">✅</span>
+                <div class="item-text">
+                    <div class="item-title">Ар бир өнөктөштөн түбөлүк киреше</div>
+                    <div class="item-description">Күчтүү адамды өстүрдүңүзбү? Сонун. Сиздин процентиңиз сизде дайыма калат.</div>
+                </div>
+            </div>
+            
+            <div class="solution-item">
+                <span class="icon">✅</span>
+                <div class="item-text">
+                    <div class="item-title">Деңгээл бекитилет</div>
+                    <div class="item-description">Бир жолу деңгээлге чыктыңыз — түбөлүк бекиттиңиз. Артка кайтуулар жок.</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- БЛОК 4: CTA -->
+        <div class="cta">
+            <p class="cta-text">Мен кыялчылдарды издебейм. Мен бош рынокту басып алуу үчүн адекваттуу адамдарды издейм.</p>
+            
+            <p class="cta-emphasis">Бизде продукт, логистика жана даяр воронка бар. Сизден — башыңыз менен иштөөгө жана алгоритмди ишке ашырууга даярдык.</p>
+            
+            <p class="cta-text">Мен 10 мүнөттүк анализди жаздым. Суу жок. Гана цифралар жана так план.</p>
+            
+            <div class="filter-warning">
+                <strong>Эгер акысыз нерселерди издесеңиз — сайтты жабыңыз.</strong><br>
+                Эгер башыңыз менен иштөөгө даяр болсоңуз — баскычты басыңыз.
+            </div>
+            
+            <a href="https://wa.me/996702719689?text=Саламатсызбы!%20Мен%20рекламадан%20келдим,%20видео-анализди%20көргүм%20келет" 
+               class="whatsapp-btn" 
+               onclick="fbq('track', 'Lead');">
+                <span class="btn-icon">📹</span>
+                ВИДЕО-АНАЛИЗДИ АЛУУ
+            </a>
+        </div>
+        
+        <!-- Футер -->
+        <div class="footer">
+            Сайт Facebook же Meta Platforms Inc. компаниясынын бөлүгү эмес.
+        </div>
+        
+    </div>
 </body>
 </html>
