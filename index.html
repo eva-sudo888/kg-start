@@ -9,87 +9,93 @@
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background-color: #f5f7fa;
-    color: #1e293b;
+    background-color: #f4f6f9;
+    color: #1f2937;
+    line-height: 1.6;
 }
 
 .container {
-    max-width: 1100px;
+    max-width: 720px;
     margin: 0 auto;
-    padding: 60px 20px;
+    padding: 40px 20px;
 }
 
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-    flex-wrap: wrap;
-}
-
-.hero-text {
-    flex: 1;
-    min-width: 300px;
-}
-
-.hero-text h1 {
-    font-size: 32px;
-    line-height: 1.4;
+h1 {
+    font-size: 28px;
     margin-bottom: 20px;
+    font-weight: 700;
 }
 
-.hero-text p {
+h2 {
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+p {
     font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    color: #475569;
-}
-
-.hero img {
-    flex: 1;
-    max-width: 450px;
-    width: 100%;
-    border-radius: 12px;
-}
-
-.button {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 14px 28px;
-    background-color: #0f172a;
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 8px;
-    transition: 0.3s;
-}
-
-.button:hover {
-    background-color: #1e293b;
+    margin-bottom: 18px;
+    color: #374151;
 }
 
 .section {
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
-.section h2 {
-    font-size: 26px;
-    margin-bottom: 20px;
+.image-block {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.section p {
+.image-block img {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+    background-color: #0f172a;
+    color: white;
+    text-decoration: none;
     font-size: 18px;
-    line-height: 1.6;
-    color: #475569;
+    font-weight: 600;
+    border-radius: 14px;
+    transition: 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-ul {
-    padding-left: 20px;
-    margin-bottom: 20px;
+.button:hover {
+    background-color: #111827;
+    transform: translateY(-2px);
 }
 
-li {
-    margin-bottom: 10px;
+.footer-note {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #6b7280;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 18px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 21px;
+    }
+    p {
+        font-size: 17px;
+    }
 }
 </style>
 </head>
@@ -98,80 +104,55 @@ li {
 
 <div class="container">
 
-<div class="hero">
-<div class="hero-text">
-<h1>
-Сиз тармактык бизнеске жаңы келген адам эмессиз.
-</h1>
+<div class="image-block">
+    <img src="zaripa.jpg.png" alt="Зарипа">
+</div>
 
-<p>
-Бир чындыкты жакшы билесиз:
-</p>
+<h1>Сиз тармактык бизнеске жаңы келген адам эмессиз.</h1>
 
-<p>
-Рынок кызып кеткен учурда —
-канчалык аракет кылбаңыз да, белгилүү бир чекке чейин гана өсөсүз.
-</p>
+<p>Бир чындыкты жакшы билесиз:</p>
 
-<p>
-Азыр Кыргызстанда жаңы эл аралык багыт калыптанып жатат.
-Рынок — баштапкы этапта.
-</p>
+<p>Рынок кызып кеткен учурда — канчалык аракет кылбаңыз да, белгилүү бир деңгээлден өйдө чыгуу кыйын.</p>
+
+<p>Азыр Кыргызстанда жаңы эл аралык багыт ачылып жатат.</p>
+
+<p>Бул — рынок жаңы калыптанып жаткан этап.</p>
 
 <a class="button" href="https://wa.me/996702719689" target="_blank">
 WhatsApp аркылуу толук маалымат алуу
 </a>
 
-</div>
-
-<img src="zaripa.jpg.png" alt="Зарипа">
-
-</div>
-
 <div class="section">
-<h2>Сиз буга чейин мындай шартта иштеп көргөнсүз:</h2>
 
-<ul>
-<li>Статус дайыма чыңалуу менен сакталат</li>
-<li>Ай сайын көлөмдү сактоо керек</li>
-<li>Жогору турган лидерлер ар дайым артыкчылыкта</li>
-<li>Жаңы өнөктөштөр бат эле чарчап, токтоп калышат</li>
-</ul>
-
-<p>
-Тажрыйба бар. Бирок система мындан ары кеңири өсүүгө шарт бербей жатат.
-</p>
-</div>
-
-<div class="section">
 <h2>Азыр эмне болуп жатат?</h2>
 
-<p>
-Дүйнөлүк масштабдагы эл аралык компанияда структура түзүлүүдө.
-Бул — рынокту баштапкы этаптан калыптандыруу.
-</p>
+<p>Дүйнөлүк масштабдагы эл аралык компанияда структура түзүлүүдө.</p>
+
+<p>Бул — рынокту баштапкы этаптан калыптандыруу.</p>
+
+</div>
+
+<div class="section">
+
+<h2>Бул мүмкүнчүлүк ким үчүн?</h2>
+
+<p>Бул маалымат жаңы келгендер үчүн эмес.</p>
+
+<p>Бул — рыноктун этаптарын түшүнгөн, кирүү убактысынын маанисин билген лидерлер үчүн.</p>
+
+<p>Эгер сиз структура нөлдөн баштап түзүлгөн этапта кирүүнүн баалуулугун түшүнсөңүз — байланыш калтырыңыз.</p>
+
+<a class="button" href="https://wa.me/996702719689" target="_blank">
+WhatsApp аркылуу байланышуу
+</a>
+
+</div>
+
+<div class="footer-note">
+Маалымат жеке байланыш аркылуу берилет.
 </div>
 
 </div>
 
 </body>
 </html>
-<div class="section">
-    <h2>Бул мүмкүнчүлүк ким үчүн?</h2>
-
-    <p>
-        Бул маалымат жаңы келгендер үчүн эмес.
-        Бул — рыноктун этаптарын түшүнгөн,
-        кирүү убактысынын маанисин билген лидерлер үчүн.
-    </p>
-
-    <p>
-        Эгер сиз структура нөлдөн баштап түзүлгөн этапта
-        кирүүнүн баалуулугун түшүнсөңүз —
-        байланыш калтырыңыз.
-    </p>
-
-    <a class="button" href="https://wa.me/996702719689" target="_blank">
-        WhatsApp аркылуу толук маалымат алуу
-    </a>
-</div>
