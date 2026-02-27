@@ -9,40 +9,45 @@
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background-color: #f3f4f6;
+    background: linear-gradient(to bottom, #f4f6f9, #eef2f7);
     color: #1f2937;
-    line-height: 1.65;
+    line-height: 1.7;
 }
 
 .container {
-    max-width: 680px;
+    max-width: 760px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 60px 24px;
 }
 
 .image-block {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .image-block img {
     width: 220px;
-    border-radius: 16px;
+    border-radius: 18px;
     display: block;
     margin: 0 auto;
 }
 
+.section {
+    margin-top: 80px;
+    padding-top: 40px;
+    border-top: 1px solid #e5e7eb;
+}
+
 h1 {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 700;
-    margin-top: 50px;
-    margin-bottom: 18px;
+    margin-bottom: 24px;
 }
 
 p {
@@ -51,14 +56,10 @@ p {
     color: #374151;
 }
 
-.section {
-    margin-top: 60px;
-}
-
 ul {
-    padding-left: 20px;
+    padding-left: 22px;
     margin-top: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 ul li {
@@ -71,31 +72,36 @@ ul li {
     display: block;
     width: 100%;
     text-align: center;
-    padding: 18px;
+    padding: 20px;
     margin-top: 30px;
     background-color: #0f172a;
     color: white;
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
-    border-radius: 14px;
-    transition: 0.25s ease;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
 }
 
 .button:hover {
     background-color: #111827;
+    transform: translateY(-2px);
 }
 
 .footer-note {
-    margin-top: 40px;
+    margin-top: 50px;
     font-size: 14px;
     color: #6b7280;
     text-align: center;
 }
 
 @media (max-width: 768px) {
-    h1 { font-size: 22px; }
-    h2 { font-size: 20px; }
+    .container {
+        padding: 40px 20px;
+    }
+    h1 { font-size: 24px; }
+    h2 { font-size: 22px; }
     p, ul li { font-size: 17px; }
 }
 </style>
@@ -109,30 +115,64 @@ ul li {
     <img src="zaripa.jpg.png" alt="Зарипа">
 </div>
 
+<!-- 1-экран -->
 <h1>Сиз тармактык бизнеске жаңы келген адам эмессиз.</h1>
 
 <p>Бир чындыкты жакшы билесиз:</p>
 
-<p>Рынок кызып кеткен учурда — канчалык аракет кылбаңыз да, белгилүү бир деңгээлден өйдө чыгуу кыйын.</p>
+<p>Рынок кызып кеткен учурда —<br>
+канчалык аракет кылбаңыз да, белгилүү бир деңгээлден өйдө чыгуу кыйын.</p>
 
-<p>Азыр Кыргызстанда жаңы эл аралык багыт ачылып жатат. Бул — рынок жаңы калыптанып жаткан этап.</p>
+<p>Азыр Кыргызстанда жаңы эл аралык багыт ачылып жатат.<br>
+Рынок жаңы калыптанып жаткан этапта.</p>
 
-<a class="button" href="https://wa.me/996702719689" target="_blank">
-WhatsApp аркылуу толук маалымат алуу
-</a>
-
+<!-- 2-экран -->
 <div class="section">
 
-<h2>Бул мүмкүнчүлүк ким үчүн?</h2>
+<h2>Сиз буга чейин мындай шартта иштеп көргөнсүз:</h2>
 
-<p>Бул маалымат жаңы келгендер үчүн эмес. Бул — рыноктун этаптарын түшүнгөн лидерлер үчүн.</p>
+<ul>
+<li>статус дайыма чыңалуу менен сакталат</li>
+<li>ай сайын көлөмдү “далилдөөгө” туура келет</li>
+<li>жогору турган лидерлер ар дайым утушта</li>
+<li>жаңы өнөктөштөр бат эле чарчап кетишет</li>
+</ul>
+
+<p>Тажрыйба бар.<br>
+Бирок система мындан ары өсүүгө мүмкүнчүлүк бербей жатат.</p>
+
+</div>
+
+<!-- 3-экран -->
+<div class="section">
+
+<p>Азыр дүйнөлүк масштабдагы эл аралык компанияда структура түзүлүп жатат.</p>
+
+<p>Бул перезапуск эмес.<br>
+Бул бирөөнүн командасына “куюлуп кирүү” эмес.<br>
+Бул башка лидерлер менен күрөш эмес.</p>
+
+<p>Бул — рынокту нөлдөн баштап калыптандыруу этабы.</p>
+
+<p>Ал эми тажрыйбалуу лидер үчүн бул таптакыр башка мүмкүнчүлүк.</p>
+
+</div>
+
+<!-- 4-экран -->
+<div class="section">
+
+<p>Эгер сиз өнөктөштүк моделинде<br>
+эмгек эле эмес,<br>
+кирүү убактысы да чечүүчү фактор экенин түшүнсөңүз —</p>
+
+<p>кайрылуу калтырыңыз.</p>
 
 <p>Мен айтып берем:</p>
 
 <ul>
-<li>Бул кайсы компания</li>
-<li>Шарттары кандай</li>
-<li>Модель кандай түзүлгөн</li>
+<li>бул кайсы компания</li>
+<li>шарттары кандай</li>
+<li>модель кандай түзүлгөн</li>
 <li>Кыргызстанда кандай стратегия менен ишке кирип жатабыз</li>
 </ul>
 
